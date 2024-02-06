@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculateur de temps de jeu Steam</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>Calculateur de temps de jeu Steam</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="input-group">
-            <label for="api-key">Clé API Steam :</label>
-            <input type="text" id="api-key">
-        </div>
-        <div class="input-group">
-            <label for="steam-id">ID Steam :</label>
-            <input type="text" id="steam-id">
-        </div>
-        <button id="calculate-btn">Calculer son temps de jeu</button>
-        <div id="result"></div>
-        <div class="help-links">
-            <a href="https://steamcommunity.com/dev/apikey" target="_blank">Aide pour récupérer la clé API Steam</a>
-            <a href="https://help.steampowered.com/fr/faqs/view/2816-BE67-5B69-0FEC" target="_blank">Aide pour récupérer l'ID Steam</a>
-        </div>
+  <h1>Calculateur de temps de jeu Steam</h1>
+  <div>
+    <label for="api_key">Clé API Steam :</label>
+    <input type="text" id="api_key" placeholder="Entrez votre clé API Steam">
+    <br>
+    <label for="steam_id">ID Steam :</label>
+    <input type="text" id="steam_id" placeholder="Entrez votre ID Steam">
+    <br>
+    <button id="calculer_temps_jeu">Calculer le temps de jeu</button>
+    <p id="resultat">En attente de données...</p>
+
+    <div class="help-links">
+        <a href="https://steamcommunity.com/dev/apikey" target="_blank">Récupérer la clé API Steam</a>
+        <a href="https://help.steampowered.com/fr/faqs/view/2816-BE67-5B69-0FEC" target="_blank">Récupérer l'ID Steam</a>
     </div>
-    <script src="script.js"></script>
+
+  </div>
 </body>
 </html>
